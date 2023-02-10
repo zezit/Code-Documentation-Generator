@@ -1,50 +1,48 @@
 
 
-/** 
- * @brief add two ints
+/**
+ * @brief Função para adicionar dois números
  * 
- * Esta função adiciona dois inteiros e retorna o resultado.
+ * Esta função recebe dois números inteiros como entrada e retorna a soma deles.
  * 
- * @param a Primeiro inteiro a ser adicionado
- * @param b Segundo inteiro a ser adicionado
+ * @param a Primeiro número inteiro
+ * @param b Segundo número inteiro
  * 
- * @return A soma dos dois inteiros
+ * @return A soma dos parâmetros a e b
  */
-int add(int a, int b){
+int add(int a, int b) { // Recebe dois inteiros a e b e devolve a soma entre eles
     return a + b;
 }
 
 
-/*!
- * \brief Subtrai dois inteiros
+
+
+/**
+ * @brief   Função para realizar a subtração de 2 inteiros
  * 
- * Esta função subtrai dois inteiros e retorna o resultado.
+ * A função realiza o cálculo 'a - b' e retorna o resultado
  * 
- * \param a Primeiro inteiro
- * \param b Segundo inteiro
+ * @param a   Primeiro número para realizar a operação (int)
+ * @param b   Segundo número para realizar a operação (int) 
  * 
- * \return Resultado da subtração
+ * @return  O resultado da operação 'a - b' (int)
  */
-int subtract(int a, int b)
-{
+int subtract(int a, int b) {
     return a - b;
 }
 
 
-/** 
- * @brief Esta função executa a adição e a subtração de dois números inteiros
- * 
- * Esta função recebe dois inteiros, a e b, e imprime a soma e a diferença deles no console.
- * 
- * @param a Primeiro inteiro
- * @param b Segundo inteiro
- * 
- * @return 0
- */
-int main()
-{
+
+/**
+ * Esta função faz duas chamadas para outras duas funções, add() e subtract().
+ *
+ * @param int a Primeiro número.
+ * @param int b Segundo número.
+ * @return O resultado da soma e subtração.
+ */ 
+int main() {
     int a = 10, b = 5;
-    printf("%d + %d = %d\n", a, b, add(a, b));
-    printf("%d - %d = %d\n", a, b, subtract(a, b));
+    printf("%d + %d = %d\n", a, b, add(a, b)); // Chama a função de soma
+    printf("%d - %d = %d\n", a, b, subtract(a, b)); // Chama a função de subtração
     return 0;
 }
